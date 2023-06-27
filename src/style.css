@@ -3,3 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+h1 {
+  text-align: center;
+  margin: 2.5rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.list-form h3 {
+  padding: 1rem;
+}
+
+.flex-list {
+  display: flex;
+  gap: 5rem;
+  padding: 1rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
