@@ -29,7 +29,7 @@ After you're finished please remove all the comments and instructions!
   <img src="Images/Logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Awesome-Books</b></h3>
+  <h3><b>Leaderboard</b></h3>
 
 </div>
 
