@@ -8,7 +8,7 @@ const players = [{
 {
     id:2,
     username: "Gappi",
-    score: 85
+    score: 95
 },
 {
     id:3,
@@ -24,8 +24,13 @@ const players = [{
     id: 5,
     username: "Carmen",
     score: 100
-}
-];
+},
+{
+    id: 6,
+    username: "Jasmine",
+    score: 80
+}];
+
 // Function Display for Array of Objects!
 function display(index){
     const tb = document.getElementById('table-body');
