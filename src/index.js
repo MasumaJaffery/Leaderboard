@@ -1,6 +1,5 @@
 import './style.css';
-import './modules/functions.js';
-const apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOBAWa2fUdM/scores/';
+const apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOBAWa2fUdm/scores/';
 const refresh = document.getElementById('refresh');
 const submit = document.getElementById('submit');
 
@@ -13,8 +12,9 @@ const addScores = async () => {
   });
 };
 
-submit.addEventListener('click', async () => {
-  const user = document.getElementById('user').value;
+submit.addEventListener('click', async (event) => {
+  event.preventDefault();
+  const user = document.getElementById('name').value;
   const score = document.getElementById('score').value;
   await displayScore(user, score);
 });
@@ -33,15 +33,13 @@ const displayScore = async (user, score) => {
 
   if (response.ok) {
     // Successful response
-    const data = await response.json();
-    scoreTable(data.result.user, data.result.score);
+    scoreTable(user, score);
   } else {
     // Handle error response
     const errorMessage = await response.text();
     console.error('Error:', response.status, errorMessage);
   }
 };
-
 
 const scoreTable = (user, score) => {
   const tb = document.getElementById('table-body');
