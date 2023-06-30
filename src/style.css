@@ -4,12 +4,24 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgba(230, 239, 255, 255);
+}
+
 h1 {
   text-align: center;
   margin: 2.5rem;
+  color: rgb(9, 9, 185);
+}
+
+.image {
+  background-image: url('/Images/trophy.gif');
+  background-repeat: no-repeat;
 }
 
 section {
+  background-image: url('/Images/trophy.gif');
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   gap: 5rem;

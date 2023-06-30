@@ -1,5 +1,5 @@
 import './style.css';
-const apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOBAWa2fUdm/scores/';
+const apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOBAWa2fUMm/scores/';
 const refresh = document.getElementById('refresh');
 const submit = document.getElementById('submit');
 
